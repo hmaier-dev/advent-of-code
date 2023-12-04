@@ -26,9 +26,8 @@ func main(){
 		numbers :=  getNumbers(line)	
 		numberCollection = append(numberCollection, addToCollection(numbers))
 	}
-	for i, elem := range numberCollection{
+	for _, elem := range numberCollection{
 		sum += elem
-		fmt.Printf("Sum: %v, %#v %d\n",sum, numberCollection[i],i)
 	}
 
 	fmt.Printf("%v \n", sum)
