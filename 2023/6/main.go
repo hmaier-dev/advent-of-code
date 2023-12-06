@@ -35,17 +35,19 @@ var testRace []Race
 func calculateDifferentWays(r Race) int {
 
 	n := 0
+	// var holds []int
 
 	for hold := 0; hold < r.time; hold++ {
 		timeToMove := r.time - hold
 		distance := timeToMove * hold
 		if distance > r.distance {
+			// holds = append(holds, hold)
 			n += 1
 		}else{
 
 		}
 	}
-
+	// fmt.Printf("Winning hold tims: %#v \n",holds)
 	return n
 }
 
