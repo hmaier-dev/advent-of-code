@@ -1,10 +1,10 @@
 package main
 
-import(
+import (
 	"bufio"
-	"os"
+	"fmt"
 	"log"
-	
+	"os"
 )
 func main(){
 	// file, err := os.Open("./example.txt")
@@ -16,10 +16,11 @@ func main(){
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan(){
 		line := scanner.Text()
+		fmt.Printf("%#v \n", line)
 
 	}
 }
 
-func parseIntoGrid(line string) [][]string{
-	return 
-}
+// func parseIntoGrid(line string) [][]string{
+// 	return 
+// }
